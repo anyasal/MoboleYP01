@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/fon2"
+    android:padding="16dp">
+
+    <!-- Заголовок экрана регистрации -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="Регистрация"
+        android:textColor="@color/DimGrey"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Поле для ввода логина -->
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Придумайте себе логин (ник)"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
+    <!-- Поле для ввода пароля -->
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:textStyle="bold" />
+
+    <!-- Поле для подтверждения пароля -->
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Подтвердите пароль"
+        android:inputType="textPassword"
+        android:textStyle="bold" />
+
+    <!-- Сообщение об ошибке -->
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Кнопка регистрации -->
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/SteelBlue"
+        android:text="Зарегистрироваться" />
+
+</LinearLayout>
